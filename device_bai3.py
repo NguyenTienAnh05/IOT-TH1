@@ -7,14 +7,13 @@ CMD_TOPIC = "iot/lab/light01/cmd"
 STATUS_TOPIC = "iot/lab/light01/status"
 DEVICE_ID = "light01"
 
-# Trạng thái ban đầu của đèn
 current_status = "OFF"
 
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
         print(f"Đã kết nối Broker! Đang lắng nghe lệnh tại: {CMD_TOPIC}")
         client.subscribe(CMD_TOPIC)
-        # Gửi trạng thái ban đầu khi vừa khởi động thiết bị
+      
         publish_status(client)
     else:
         print(f"Kết nối thất bại, mã lỗi: {rc}")
