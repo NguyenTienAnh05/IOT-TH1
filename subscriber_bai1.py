@@ -31,7 +31,6 @@ def main():
         print(f"Đang kết nối tới broker {BROKER}...")
         client.connect(BROKER, PORT, 60)
         
-        # Chạy vòng lặp liên tục để lắng nghe thông điệp cho đến khi nhấn Ctrl+C
         client.loop_forever()
         
     except KeyboardInterrupt:
