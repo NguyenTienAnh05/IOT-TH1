@@ -26,14 +26,14 @@
 - Mở 1 Terminaal khác và hạy Controller: `python controller_bai3.py` *(nhập lệnh ON hoặc OFF từ bàn phím để điều khiển đèn, nhập EXIT để thoát)*
 ## 4. Kết quả
 ### Bài 1 (Gửi và nhận thông điệp)
-Bên publisher:
-client = mqtt.Client()
-Đang kết nối tới broker broker.hivemq.com...
-Bắt đầu gửi thông điệp lên topic 'iot/lab/message' (Nhấn Ctrl+C để dừng)...
-Đã gửi thành công: Xin chao tu client Python MQTT - B23DCCN037 - Nguyen Tien Anh
-Đã gửi thành công: Xin chao tu client Python MQTT - B23DCCN037 - Nguyen Tien Anh
+-Bên publisher:
++client = mqtt.Client()
++Đang kết nối tới broker broker.hivemq.com...
++Bắt đầu gửi thông điệp lên topic 'iot/lab/message' (Nhấn Ctrl+C để dừng)...
++Đã gửi thành công: Xin chao tu client Python MQTT - B23DCCN037 - Nguyen Tien Anh
++Đã gửi thành công: Xin chao tu client Python MQTT - B23DCCN037 - Nguyen Tien Anh
 
-Đã dừng chương trình Publisher.
++Đã dừng chương trình Publisher.
 Bên subscriber:
 client = mqtt.Client()
 Đang kết nối tới broker broker.hivemq.com...
